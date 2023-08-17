@@ -12,7 +12,7 @@ export const App = () => {
     <div
       style={{
         flexDirection: 'column',
-        height: '100vh',
+        height: '70vh',
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'center',
@@ -20,7 +20,8 @@ export const App = () => {
         fontSize: 40,
         gap: '50px',
         padding: '50px',
-        color: '#010101'
+        color: '#010101',
+
       }}
     >
       <Profile
