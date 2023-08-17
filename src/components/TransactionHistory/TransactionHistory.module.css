@@ -1,8 +1,10 @@
 /* Стилі для таблиці .transaction-history */
 .transaction-history {
-    width: 100%;
+    width: 800px;
     border-collapse: collapse;
     border: 1px solid #ccc;
+    gap: 50px;
+    margin: 0;
     transform: scale(0.6);
 
 }
@@ -12,7 +14,7 @@
     background-color: #f0f0f0;
     border-bottom: 1px solid #ccc;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 /* Стилі для рядків з даними */
@@ -23,7 +25,8 @@
 /* Стилі для комірок в рядках */
 .transaction-history td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
+    gap: 50px;
 }
 
 /* Додаткові стилі для парних рядків */
