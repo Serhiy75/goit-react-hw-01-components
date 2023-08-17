@@ -1,0 +1,39 @@
+/* Стилі для списку користувачів .friend-list */
+
+
+/* Стилі для елемента списку .item */
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Стилі для статусу .status */
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.isOnline {
+    background-color: green;
+}
+
+.isOffline {
+    background-color: red;
+}
+
+/* Стилі для аватару .avatar */
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Стилі для імені .name */
+.name {
+    font-size: 16px;
+    font-weight: bold;
+}

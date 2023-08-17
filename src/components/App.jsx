@@ -1,7 +1,9 @@
 import { Profile } from "./Profile/Profile";
 import user from '../data/user.json'
 import data from '../data/data.json';
+import friends from '../data/friends.json';
 import { Statistics } from "./Statistics/Statistics";
+import { FriendList } from "./FriendList/FriendList"
 
 export const App = () => {
   return (
@@ -10,22 +12,26 @@ export const App = () => {
         flexDirection: 'column',
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
+        overflowY: 'auto',
         fontSize: 40,
+        gap: '50px',
+        padding: '50px',
         color: '#010101'
       }}
     >
-       <Profile
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        stats={user.stats}/>
+        stats={user.stats} />
       <Statistics
-      title={'APLOAD STATS'}
-      stats={data}
-      />  
+        title={'UPLOAD STATS'}
+        stats={data}
+      />
+      <FriendList friends={friends} />
 
     </div>
   );
