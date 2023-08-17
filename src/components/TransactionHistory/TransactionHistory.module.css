@@ -1,0 +1,31 @@
+/* Стилі для таблиці .transaction-history */
+.transaction-history {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    transform: scale(0.5);
+}
+
+/* Стилі для заголовка таблиці */
+.transaction-history thead th {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Стилі для рядків з даними */
+.transaction-history tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Стилі для комірок в рядках */
+.transaction-history td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Додаткові стилі для парних рядків */
+.transaction-history tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
